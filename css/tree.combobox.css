@@ -1,0 +1,173 @@
+.ct-container {
+    min-width: 200px;
+    position: relative;
+    width: 100%;
+}
+.ct-container * {
+    box-sizing: border-box;
+}
+.ct-container .hidden {
+    display: none !important;
+}
+.ct-container svg {
+    height: 16px !important;
+    width: 16px !important;
+}
+.ct-container .ct-found {
+    color: #c00;
+}
+.ct-container .ct-input {
+    position: relative;
+}
+.ct-container input[type=text] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 32px;
+    outline: 0;
+    padding: 5px 10px 5px 30px;
+    width: 100%;
+}
+.ct-container.singleselect input[type=text] {
+    padding-right: 40px;
+} 
+.ct-container .ct-search-icon {
+    left: 10px;
+    position: absolute;
+    top: 8px;
+}
+.ct-container .ct-search-icon svg, .ct-container .ct-clear svg {
+    fill: #bbb;
+}
+.ct-container .ct-clear:hover svg {
+    fill: #333;
+}
+.ct-container .ct-clear {
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    bottom: 1px;
+    cursor: pointer;
+    left: auto;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 35px;
+}
+.ct-container .ct-clear svg {
+    left: 9px;
+    position: absolute;
+    top: 8px;
+}
+.ct-container .ct-list {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.13);
+    display: none;
+    left: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    position: absolute;
+    top: 31px;
+    width: 100%;
+}
+.ct-container.open .ct-list {
+    display: block;
+}
+.ct-list ul {
+    list-style: none;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.ct-container.singleselect .ct-list ul {
+    margin-left: 0;
+}
+.ct-container ul li {
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    padding: 2px 0 2px 33px;
+}
+.ct-container.singleselect .ct-list ul li {
+    padding: 0;
+}
+.ct-container .ct-list ul li span.ct-name {
+    display: block;
+    float: left;
+    overflow: hidden;
+    padding: 4px 5px 4px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.ct-container.singleselect .ct-list ul li span.ct-name {
+    border-bottom: 1px solid #eee;
+    float: none;
+    margin: 0 14px;
+    padding: 5px 0 5px 0px;
+    width: auto;
+}
+.ct-container.singleselect .ct-list ul li:hover {
+    background-color: #666;
+    color: #fff;
+}
+.ct-container.singleselect .ct-list ul li:hover span {
+    border-color: #666;
+    cursor: pointer;
+}
+.ct-container ul li input {
+    left: 10px;
+    position: absolute;
+    top: 4px;
+    vertical-align: top;
+}
+.ct-container.multiselect ul li > span:first-child {
+    color: #555;
+    font-size: 14px;
+    left: -4px;
+    position: absolute;
+    top: 5px;
+    transform:rotate(0deg);
+    transition: all 0.2s linear;
+}
+.ct-container.multiselect ul li.active > span:first-child {
+    transform:rotate(90deg);
+}
+.ct-container ul li > span svg {
+    fill: #555;
+}
+.ct-container ul li ul {
+    display: none;
+}
+.ct-container ul li.active > ul {
+    display: block;
+    margin-left: -15px;
+}
+.ct-container .no-result {
+    color: #333;
+    display: none;
+    padding: 5px 10px;
+}
+.ct-container.noresult .no-result {
+    display: block;
+}
+.ct-container .ct-tag {
+    background-color: #f7f7f7;
+    border: 1px dotted #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+    overflow: hidden;
+    padding: 3px 25px 3px 5px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ct-container .ct-tag span {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+.ct-container .ct-tag span svg {
+    fill: #c00;    
+}
